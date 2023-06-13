@@ -61,6 +61,7 @@
 - Padding 
 ~~~
 --section-padding: 2rem;
+--padding-0: 0.25rem;
 --padding-1: 0.5rem;
 --padding-2: 1rem;
 --padding-3: 1.5rem;
