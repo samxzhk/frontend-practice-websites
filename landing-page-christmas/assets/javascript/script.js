@@ -7,10 +7,12 @@ const navLink = document.querySelectorAll('.nav__link');
 const sections = document.querySelectorAll('section[id]');
 const header = document.getElementById('header');
 const scrolltop = document.getElementById('scroll-top');
+
+
 /* ===========  FUNCTIONS ========== */
+
 function showMenu(toggle, nav)
 {
-    // check if the element exists
     if(toggle && nav)
     {
         toggle.addEventListener('click', ()=>
@@ -19,56 +21,88 @@ function showMenu(toggle, nav)
         })
     }
 }
-function removeMenuOnClick(navMenu)
-{
-    navMenu.classList.remove('show-menu');
-}
 
-function activeSectionScroll(sections)
+function linkAction(navMenu)
+{
+    navMenu.classList.remove('show-menu')
+}
+function scrollActive(sections)
 {
     const scrollY = window.scrollY;
-    sections.forEach(section =>
+    sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 50;
+        const sectionId = section.getAttribute('id');
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
         {
-            const sectionHeight = section.offsetHeight;
-            const sectionTop = section.offsetTop - 50;
-            const sectionId = section.getAttribute('id');
-
-           
-            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
-            {
-                document.querySelector(`.nav__menu a[href*=${sectionId}]`).classList.add('active-link');
-            }
-            else 
-            {
-                document.querySelector(`.nav__menu a[href*=${sectionId}]`).classList.remove('active-link');
-            }
-        })
+            document.querySelector(`.nav__menu a[href*='${sectionId}']`).classList.add('active-link');
+        }
+        else
+        {
+            document.querySelector(`.nav__menu a[href*=${sectionId}]`).classList.remove('active-link');
+        }
+    })    
 }
+
 function scrollHeader(nav)
 {
     if(this.scrollY >= 200)
     {
         nav.classList.add('scroll-header');
     }
-    else 
+    else
     {
         nav.classList.remove('scroll-header');
     }
 }
-function showScrollTop(scrolltop)
+
+function showScrollTop(scrollTop)
 {
     if(this.scrollY >= 560)
     {
-        scrolltop.classList.add('show-scroll');
+        scrollTop.classList.add('show-scroll');
     }
-    else 
+    else
     {
-        scrolltop.classList.remove('show-scroll');
+        scrollTop.classList.remove('show-scroll');
     }
 }
-/* ======== FUNCTION INVOCATION ====== */
+navLink.forEach(item => item.addEventListener('click', linkAction.bind(this, nav)));
 showMenu(toggle, nav);
-navLink.forEach(link => link.addEventListener('click', removeMenuOnClick.bind(null, nav)));
-window.addEventListener('scroll', activeSectionScroll.bind(null, sections));
+window.addEventListener('scroll', scrollActive.bind(this, sections));
 window.addEventListener('scroll', scrollHeader.bind(this, header));
 window.addEventListener('scroll', showScrollTop.bind(this, scrolltop));
+
+/* ============ DARK LIGHT THEME  =============== */
+
+const themebutton = document.getElementById('theme-button');
+const darkTheme = "dark-theme";
+const iconTheme ='bx-toggle-right'
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+
+
+
+
+if(selectedTheme)
+{
+    document.body.classList[selectedTheme == 'dark' ? 'add' : 'remove'](darkTheme);
+    /* this looks to me like a reversed logical thinking */
+    themebutton.classList[selectedIcon == 'bx-toggle-left' ? 'add' : 'remove'](iconTheme);
+
+}
+
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () => themebutton.classList.contains(iconTheme) ? 'bx-toggle-left' : 'bx-toggle-right';
+
+themebutton.addEventListener('click', ()=>
+{
+    /* - light theme  */
+    document.body.classList.toggle(darkTheme); /* dark theme */
+    themebutton.classList.toggle(iconTheme); /*adds box-toggle-right */
+    localStorage.setItem('selected-theme', getCurrentTheme()); /* (selected-theme, 'dark') */
+    localStorage.setItem('selected-icon', getCurrentIcon()); /* (selected-icon, 'bx-toggle-left') */
+})
+
+

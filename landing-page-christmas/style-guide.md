@@ -57,16 +57,18 @@
 --mb-4: 2rem;
 --mb-5: 2.5rem;
 --mb-6: 3rem;
+--mb-nav-link: var(--mb-3);
 ~~~
 - Padding 
 ~~~
---section-padding: 2rem;
+--section-padding: 4rem 0 2rem;
 --padding-0: 0.25rem;
 --padding-1: 0.5rem;
 --padding-2: 1rem;
 --padding-3: 1.5rem;
 --padding-4: 2rem;
 --padding-5: 2.5rem;
+--padding-nav-menu: 2.5rem 0 0;
 ~~~
 
 - line height 
@@ -80,6 +82,20 @@
 ~~~
 --z-tooltip: 10;
 --z-fixed: 100;
+~~~
+- Transition
+~~~
+--nav-menu-transition: 0.4s;
+~~~
+
+- Box shadow
+~~~
+--bs-nav-menu: 0 0 4px rgba(0, 0, 0, .1);
+~~~
+
+- Border radius
+~~~
+--br-nav-menu: 2rem;
 ~~~
 
 #### Media query
