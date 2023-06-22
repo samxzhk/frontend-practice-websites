@@ -13,7 +13,7 @@
 
 ### Screeshots
 
-![Site Desktop Demo](./assets/images/preview-page.png"Desktop Demo")
+![Site Desktop Demo](assets/imgs/preview-page.png "Desktop Demo")
 
 ### Contact
 
