@@ -8,3 +8,4 @@
 - [Christmas Landing Page](https://samxzhk.github.io/frontend-practice-websites/landing-page-christmas)
 - [Travel Website](https://samxzhk.github.io/frontend-practice-websites/travel-website)
 - [Abstract Website](https://samxzhk.github.io/frontend-practice-websites/abstract-website)
+- [Clothing Landing Page](https://samxzhk.github.io/clothing-landing-page)
