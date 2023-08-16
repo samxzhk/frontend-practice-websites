@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megadeth</title>
+    <!---============ FAV ICON ==============-->
+    <link rel="shortcut icon" href="./assets/img/ion-icon.png" type="image/x-icon">
+    <!---============== CSS LINK ======================= -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!---============== REMIX ICON ===================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!---================= JAVASCRIPT ===================-->
+    <script src="./assets/js/script.js" defer></script>
+    <!---================= SWIPER JS =================-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!---================ HEADER ========================-->
+    <header class="header">
+        <!---------- nav ------------>
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <img src="./assets/img/megadeath-logo.png" alt="megadeth logo" class="nav__img"/>
+            </a>
+            <!------------- nav menu ---------------->
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item active">
+                        HOME
+                    </li>
+                    <li class="nav__item">
+                        NEWS
+                    </li>
+                    <li class="nav__item has-subnav">
+                        <span data-subnav-toggle>TOUR <i class="ri-arrow-down-s-fill"></i></span>
+                        <ul class="nav__subnav">
+                            <li class="nav__item">
+                                <span>VIP Upgrades</span>
+                            </li>
+                            <li class="nav__item">
+                                <span>Stage Played Guitars</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        STORE
+                    </li>
+                    <li class="nav__item">
+                        CYBER ARMY
+                    </li>
+                    <li class="nav__item">
+                        STAGE PLAYED GUITARS
+                    </li>
+                    <li class="nav__item">
+                        BEER
+                    </li>
+                    <li class="nav__item">
+                        WINE
+                    </li>
+                </ul>
+            </div>
+            <!------ nav action --------->
+            <div data-nav-toggle class="nav__action">
+                <i data-nav-open class="ri-menu-line"></i>
+<!--                 <i data-nav-close class="ri-close-line hidden"></i> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!---================= HERO SECTION ==================-->
+        <section class="hero">
+            <div class="hero__container container grid">
+                <figure>
+                    <img src="./assets/img/megadeath-logo.png" alt="megadeth logo">
+                </figure>
+            </div>
+        </section>
+        <!---================= NEW-ALBUM SECTION ==================-->
+        <section class="new-album section">
+            <div class="new-album__container container">
+                <article class="album grid">
+                    <figure class="album__image">
+                        <img src="./assets/img/album_img.jpg" alt="album image">
+                    </figure>
+                    <div class="album__data">
+                        <ol class="album__tracks">
+                            <li class="album__track">
+                                1.”The Sick, the Dying… and the Dead!”
+                            </li>
+                            <li class="album__track">2.”Life in Hell”</li>
+                            <li class="album__track">3.”Night Stalkers” (featuring Ice-T)</li>
+                            <li class="album__track">4.”Dogs of Chernobyl”</li>
+                            <li class="album__track">5.”Sacrifice”</li>
+                            <li class="album__track">6.”Junkie”</li>
+                            <li class="album__track">7.”Psychopathy”</li>
+                            <li class="album__track">8.”Killing Time”</li>
+                            <li class="album__track">9.”Soldier On!”</li>
+                            <li class="album__track">10.”Célebutante”</li>
+                            <li class="album__track">11.”Mission to Mars”</li>
+                            <li class="album__track">12.”We’ll Be Back”</li>
+                        </ol>
+                        <a href="#" class="button">STREAM THE NEW ALBUM</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--======================== VIDEOS SECTION ==================-->
+        <section class="videos section">
+            <div class="video__container container swiper mySwiper" id="mySwiper">
+                    <div class="swiper-wrapper">
+                      <article class="video swiper-slide">
+                        <img src="./assets/img/mega-vid-1.jpeg" alt="">
+                        <div class="video__thumb">
+                            <img src="./assets/img/play-png.png" class="video__img" alt="">
+                        </div>
+                      </article>
+                      <article class="video swiper-slide">
+                        <img src="./assets/img/mega-vid-2.jpeg" alt="slide image">
+                        <div class="video__thumb">
+                            <img src="./assets/img/play-png.png" class="video__img" alt="slide image">
+                        </div>
+                      </article>
+                      <article class="video swiper-slide">
+                        <img src="./assets/img/mega-vid-3.jpeg" alt="">
+                        <div class="video__thumb">
+                            <img src="./assets/img/play-png.png" class="video__img" alt="slide image">
+                        </div>
+                      </article>
+                      <article class="video swiper-slide">
+                        <img src="./assets/img/mega-vid-4.jpeg" alt="">
+                        <div class="video__thumb">
+                            <img src="./assets/img/play-png.png" class="video__img" alt="slide image">
+                        </div>
+                      </article>
+                      <article class="video swiper-slide">
+                        <img src="./assets/img/mega-vid-5.jpeg" alt="slide image">
+                        <div class="video__thumb">
+                            <img src="./assets/img/play-png.png" class="video__img" alt="">
+                        </div>
+                      </article>
+                  
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <!----================ UPCOMING-SHOWS =================== -->
+        <section class="upcoming-shows section">
+            <h2 class="section__title">UPCOMING SHOWS</h2>
+            <div class="upcoming-shows__container container grid">
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">AUG 16, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Summer Breeze Open Air</p>
+                            <p class="location">Dinkelsbühl, Germany</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">TICKETS</button>
+                    </div>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">AUG 17, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Enteria Arena</p>
+                            <p class="location">Pardubice, Czechia</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">M&EG/VIP Q&A</button>
+                        <button class="show__button">TICKETS</button>
+                    </div>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">AUG 19, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Dynamo Metal Fest</p>
+                            <p class="location">Eindhoven, Netherlands</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">TICKETS</button>
+                    </div>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">AUG 22, 2023</p>
+                        <div class="show__location">
+                            <p class="location">L'Olympia</p>
+                            <p class="location">Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">M&G/VIP Q&A</button>
+                        <button class="soldout">SOLD OUT</button>
+                    </div>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">AUG 25, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Riverside Open Air Aarbug</p>
+                            <p class="location">Aarburg, Switzerland</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">TICKETS</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">AUG 27, 2023</p>
+                        <div class="show__location">
+                            <p class="location">AMA Music Festival</p>
+                            <p class="location">Romano d'Ezzelino, Italy</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">TICKETS</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">SEP 9, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Revel Entertainment Center</p>
+                            <p class="location">Albuquerque, NM</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">M&G/VIP Q&A</button>
+                        <button class="show__button">TICKETS</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">SEP 15, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Hollywood Casino at Penn National Race Course</p>
+                            <p class="location">Grantville, PA</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">MEET & GREET</button>
+                        <button class="show__button">TICKETS/VIP</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">SEP 16, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Premier Theather at Foxwoods Resorts Casino</p>
+                            <p class="location">Ledyard, CT</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">MEET & GREET</button>
+                        <button class="show__button">TICKETS/VIP</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">SEP 17, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Hard Rock Live at Etess Arena</p>
+                            <p class="location">Atlantic City, NJ</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">MEET & GREET</button>
+                        <button class="show__button">TICKETS/VIP</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">SEP 21, 2023</p>
+                        <div class="show__location">
+                            <p class="location">The Colosseum at Caesars Windsor</p>
+                            <p class="location">Windsor, ON</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">MEET & GREET</button>
+                        <button class="show__button">TICKETS/VIP</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">SEP 22, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Louder Than life</p>
+                            <p class="location">Luoisville, KY</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">TICKETS/VIP</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">SEP 23, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Plymouth Motor Speedway</p>
+                            <p class="location">Plymoth, IN</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">M&G/VIP Q&A</button>
+                        <button class="show__button">TICKETS/VIP</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">SEP 27, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Grossinger Motors Arena</p>
+                            <p class="location">Bloomington, IL</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">M&G</button>
+                        <button class="show__button">TICKETS/VIP</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">SEP 29, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Scheels Arena</p>
+                            <p class="location">Fargo, ND</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">M&G</button>
+                        <button class="show__button">TICKETS/VIP</button>
+                </article>
+                <article class="show grid">
+                    <div class="show__data">
+                        <p class="show__date">SEP 30, 2023</p>
+                        <div class="show__location">
+                            <p class="location">Mystic Lake Casino Hotel (Mystik Lake)</p>
+                            <p class="location">Prior Lake, MN</p>
+                        </div>
+                    </div>
+                    <div class="show__buttons">
+                        <button class="show__button">M&G</button>
+                        <button class="show__button">TICKETS/VIP</button>
+                </article>
+            </div>
+        </section>
+        <!---======== NOTIFICATION-->
+        <section class="notification grid section">
+            <p>Get notified when new events are announced in your area</p>
+            <a href="#" class="button">FOLLOW MEGADETH</a>
+        </section>
+    </main>
+    <!---  ================FOOTER ==============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>powered by <span>seated</span></p>
+        </div>
+        <ul class="footer__socials">
+            <li>
+                <i class="ri-facebook-circle-fill"></i>
+            </li>
+            <li>
+                <i class="ri-twitter-fill"></i>
+            </li>
+            <li>
+                <i class="ri-youtube-fill"></i>
+            </li>
+            <li>
+                <i class="ri-instagram-line"></i>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+<p>
+
+</p>
